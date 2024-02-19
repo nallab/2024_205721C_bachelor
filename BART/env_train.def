@@ -1,0 +1,11 @@
+BootStrap: localimage
+From: /PATH/TO/transformers-pytorch-gpu_4.35.2.sif
+
+%post
+	pip install --upgrade pip
+	pip install accelerate -U
+	pip install transformers
+	pip install evaluate
+	pip install sacrebleu
+	pip install joblib
+	pip install pandas==1.5.3
